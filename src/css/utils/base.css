@@ -7,13 +7,6 @@
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
     sans-serif;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-
-  --color-accent: #f8d24e;
   --color-text-light: #fcfcfc;
   --color-text-dark: #131313;
   --color-text-inverse: #ffffff;
@@ -22,14 +15,27 @@
   --bg-color-card: #efd478;
   --bg-color-card: #d6936d;
   --bg-color-card: #aec6a5;
+  --color-accent: #f8d24e;
+  --color-hover: #0a8817;
+  --color-disabled: #ababab;
+
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
-  min-width: 100vw;
-  min-height: 100vh;
-  margin: 0;
+  min-height: 100%;
   font-family: var(--font-primary);
-  font-size: 16px;
-  line-height: 1.5;
   font-weight: 400;
+  font-size: 16px;
+  background-color: var(--bg-color-secondary);
+  color: var(--color-text-dark);
 }
