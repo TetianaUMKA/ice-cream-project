@@ -1,3 +1,84 @@
-.footer {
-  background-color: #84a178;
+.header-container {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.header-nav {
+  display: none;
+}
+
+.burger-open-btn {
+  display: flex;
+  margin-left: auto;
+  background: none;
+  border: none;
+}
+
+.burger-icon {
+  stroke: var(--color-text-light);
+}
+
+.buy-btn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+  padding-top: 20px;
+  }
+
+  .buy-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 26px;
+  } 
+
+  .buy-btn-icon {
+    stroke: var(--color-text-dark);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    padding-top: 18px;
+  }
+  
+  .header-logo {
+    width: 65px;
+    height: 60px;
+  }
+
+  .header-nav {
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  .header-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+  }
+
+  .header-nav-item {
+    font-weight: 700;
+    color: var(--color-text-light);
+  }
+
+  .header-nav-item:hover {
+    color: var(--color-accent);
+  }
+    
+  .burger-open-btn {
+    display: none;
+  }
+
+  .buy-btn {
+    margin-left: 115px;
+  }
+
+  .button-primary:focus .buy-btn-icon{
+    stroke: currentColor;
+  }
 }
