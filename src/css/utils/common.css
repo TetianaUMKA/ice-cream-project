@@ -28,7 +28,7 @@
   color: var(--color-text-dark);
   border: none;
   border-radius: 10px;
-  transition: background-color var(--transition);
+  transition: background-color var(--transition), color var(--transition);
 }
 
 @media screen and (min-width: 1200px) {
@@ -39,6 +39,7 @@
   .button-primary:focus {
     outline: none;
     color: var(--color-text-light);
+    background-color: var(--color-hover);
   }
 }
 
