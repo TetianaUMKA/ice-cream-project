@@ -71,6 +71,13 @@
     cursor: not-allowed;
   } */
 
+.icon-arrow {
+  width: 40px;
+  height: 15px;
+  stroke: currentColor;
+  stroke-width: 2px;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;

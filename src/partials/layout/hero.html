@@ -1,5 +1,81 @@
 <section class="hero">
   <div class="container">
-    <h2>Hero</h2>
+    <div class="hero-content-first-wrapper">
+      <h1 class="section-title hero-title">
+        <span class="first-part-hero-title">ice cream made with</span>
+        <span class="second-part-hero-title">passion</span>
+      </h1>
+      <div class="hero-anchor-btn-link-wrapper">
+        <a href="#advantages" class="button-secondary hero-anchor-btn-link">Products</a>
+        <a href="#advantages" class="hero-anchor-link">How it’s made?</a>
+      </div>
+      <div class="hero-action-call-wrapper">
+        <div>
+          <picture>
+            <source
+              srcset="/img/hero-webp/plate-desk-1x.webp 1x, /img/hero-webp/plate-desk-2x.webp 2x"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="/img/hero-webp/plate-tab-1x.webp 1x, /img/hero-webp/plate-tab-2x.webp 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/img/hero-webp/plate-mob-1x.webp 1x, /img/hero-webp/plate-mob-2x.webp 2x"
+              media="(min-width: 320px)"
+            />
+            <img
+              src="/img/hero-webp/plate-mob-1x.webp"
+              alt="A plate full of ice cream scoops"
+              width="170"
+            />
+          </picture>
+        </div>
+        <p class="hero-action-call-text">Choose your favourite product and enjoy its flavour</p>
+        <a href="#products" class="hero-action-call-link">
+          <svg
+            class="icon-arrow hero-action-call-link-icon"
+            aria-label="Go to the products section"
+          >
+            <use href="/img/sprite.svg#icon-arrow"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-content-second-wrapper">
+      <div>
+        <picture>
+          <source
+            srcset="
+              /img/hero-webp/smile-ice-cream-desk-1x.webp 1x,
+              /img/hero-webp/smile-ice-cream-desk-2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              /img/hero-webp/smile-ice-cream-tab-1x.webp 1x,
+              /img/hero-webp/smile-ice-cream-tab-2x.webp 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            src="/img/hero-webp/smile-ice-cream-tab-1x.webp"
+            alt="Ice Cream that has a smiley face"
+            width="152"
+          />
+        </picture>
+      </div>
+      <div class="statics-descr-wrapper">
+        <p class="statics-descr">
+          <span class="statics-number">16</span>
+          <span>cafes</span>
+        </p>
+        <p class="statics-descr">
+          <span class="statics-number">23</span>
+          <span>food trucks</span>
+        </p>
+      </div>
+    </div>
   </div>
 </section>
