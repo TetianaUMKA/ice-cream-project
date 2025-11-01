@@ -1,3 +1,94 @@
 <section class="advantages">
-  <div class="container"><h2>How it’s made?</h2></div>
+  <div class="container">
+      <div class="advantages-header">
+        <h2 class="section-title advantages-title">How <br> it's <br> made?</h2>
+        <h3 class="advantages-subtitle">Tradition and love</h3>
+      </div>
+      <div class="advantages-block">
+        <div class="advantages-card-image">
+          <picture>
+              <source
+                srcset="
+                  img/advantages-webp/advantages-desk-1x.webp    1x,
+                  img/advantages-webp/advantages-desk-2x.webp 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  img/advantages-webp/advantages-tab-1x.webp    1x,
+                  img/advantages-webp/advantages-tab-2x.webp 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  img/advantages-webp/advantages-mob-1x.webp    1x,
+                  img/advantages-webp/advantages-mob-2x.webp 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img class="advantages-img" 
+               src="img/advantages-webp/advantages-mob-1x.webp" 
+               alt="Корова на лугу"
+               />
+            </picture>
+        </div>
+        <div class="advantages-card-content">
+          <div class="advantages-container-text">
+            <p class="advantages-content-text text-gros">
+            Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts.
+            </p>
+            <p class="advantages-content-text">
+            We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes. 
+            </p>
+            <p class="advantages-content-text content-text-hidden">
+              This is enough to choose ice cream and 
+              coffee for any mood!
+            </p>
+          </div>
+          <button id="open-modal-btn" class="advantages-btn">
+            Read more
+              <svg class="buy-btn-icon" width="12" height="12">
+               <use href="/img/sprite.svg#icon-buy-btn"></use>
+              </svg>
+          </button>
+        </div>
+      </div>
+      <ul class="advantages-list">
+        <li class="advantages-item">
+          <svg width="36" height="36">
+           <use href="/img/sprite.svg#icon-cow"></use>
+          </svg>
+          <div class="advantages-card">
+            <h4 class="advantages-card-text">721</h4>
+            <p class="advantages-text-card">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+          </div>
+        </li>
+        <li class="advantages-item">
+          <svg width="36" height="36">
+           <use href="/img/sprite.svg#icon-weight"></use>
+          </svg>
+          <div class="advantages-card">
+            <h4 class="advantages-card-text">16kg</h4>
+            <p class="advantages-text-card">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+          </div>
+        </li>
+        <li class="advantages-item">
+          <svg width="36" height="36">
+           <use href="/img/sprite.svg#icon-ice-crema"></use>
+          </svg>
+          <div class="advantages-card">
+            <h4 class="advantages-card-text">84</h4>
+            <p class="advantages-text-card">
+              Aliquam ac dui vel dui vulputate consectetur. Mauris massa.
+            </p>
+          </div>
+        </li>
+      </ul>
+  </div>
 </section>
