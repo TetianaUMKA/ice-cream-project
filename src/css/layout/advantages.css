@@ -81,6 +81,7 @@
   justify-content: center;
   align-items: center;
   gap: 4px;
+  margin: 0 auto;
 }
 
 .advantages-btn-icon {
@@ -234,6 +235,10 @@
     letter-spacing: 0.04em;
   }
 
+  .advantages-btn {
+    margin: 0;
+  }
+
   .advantages-list {
     display: flex;
     justify-content: center;
@@ -266,7 +271,7 @@
   .advantages-content {
     display: flex;
     flex-direction: row;
-    align-items: center; /* вирівнює по верху */
+    align-items: center;
     gap: 100px;
   }
 
