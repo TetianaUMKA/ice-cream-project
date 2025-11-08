@@ -8,7 +8,7 @@
   display: none;
 }
 
-.burger-open-btn {
+.burger-open-menu-btn {
   display: flex;
   margin-left: auto;
   background: none;
@@ -23,9 +23,75 @@
   display: none;
 }
 
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  padding: 12px 16px;
+  background-color: var(--bg-color-primary);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.burger-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.burger-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.close-burger-menu-btn {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: transparent;
+  fill: var(--color-text-light);
+}
+
+.burger-menu-nav {
+  margin-bottom: 66px;
+}
+
+.burger-menu-nav-link {
+  width: 100%;
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-text-light);
+}
+
+.burger-menu-nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.burger-menu-nav-item {
+  text-align: center;
+}
+
+.burger-menu-buy-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto;
+}
+
+.buy-btn-icon {
+  stroke: var(--color-text-dark);
+}
+
 @media screen and (min-width: 768px) {
   .header-container {
-  padding-top: 20px;
+    padding-top: 20px;
   }
 
   .buy-btn {
@@ -33,10 +99,26 @@
     align-items: center;
     gap: 8px;
     margin-left: 26px;
-  } 
+  }
 
-  .buy-btn-icon {
-    stroke: var(--color-text-dark);
+  .burger-menu {
+    padding: 20px 32px;
+  }
+
+  .burger-menu-header {
+    margin-bottom: 76px;
+  }
+
+  .burger-menu-nav-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .burger-menu-nav-link {
+    font-size: 48px;
+  }
+
+  .burger-menu-buy-btn {
+    display: none;
   }
 }
 
@@ -44,7 +126,7 @@
   .header-container {
     padding-top: 18px;
   }
-  
+
   .header-logo {
     width: 65px;
     height: 60px;
@@ -61,24 +143,32 @@
     gap: 36px;
   }
 
-  .header-nav-item {
+  .header-nav-link {
     font-weight: 700;
     color: var(--color-text-light);
   }
 
-  .header-nav-item:hover {
+  .header-nav-link:hover {
     color: var(--color-accent);
   }
-    
-  .burger-open-btn {
-    display: none;
+  .header-nav-link:focus {
+    color: var(--color-accent);
+    outline: none;
   }
 
   .buy-btn {
     margin-left: 115px;
   }
 
-  .button-primary:focus .buy-btn-icon{
+  .buy-btn-icon {
     stroke: currentColor;
+  }
+
+  .burger-open-menu-btn {
+    display: none;
+  }
+
+  .burger-menu {
+    display: none;
   }
 }
