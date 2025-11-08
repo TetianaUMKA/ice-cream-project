@@ -82,16 +82,16 @@
 .hero-action-call-img-wrapper picture,
 .hero-action-call-img-wrapper img {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
-.hero-ice-cream-img-wrapper picture,
 .hero-ice-cream-img-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: bottom;
+  filter: drop-shadow(5px 10px 10px rgba(252, 252, 0252, 0.44));
 }
 
 .statics-descr-wrapper {
