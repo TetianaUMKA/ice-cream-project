@@ -31,7 +31,7 @@
       <ul class="header-nav-list">
         <li><a class="header-nav-link" href="#products">Our products</a></li>
         <li><a class="header-nav-link" href="#feedbacks">Feedbacks</a></li>
-        <li><a class="header-nav-link" href="#contact">Contact & Location</a></li>
+        <li><a class="header-nav-link" href="#contacts">Contact & Location</a></li>
       </ul>
     </nav>
     <button class="burger-open-menu-btn" type="button">
@@ -39,7 +39,7 @@
         <use href="/ice-cream-project/assets/sprite-Dm7B36GW.svg#icon-burger"></use>
       </svg>
     </button>
-    <button class="button-primary buy-btn" type="button">
+    <button class="button-primary buy-btn open-buy-modal" type="button">
       Buy now
       <svg class="buy-btn-icon" width="12" height="12">
         <use href="/ice-cream-project/assets/sprite-Dm7B36GW.svg#icon-buy-btn"></use>
@@ -59,14 +59,24 @@
     </div>
     <nav class="burger-menu-nav">
       <ul class="burger-menu-nav-list">
-        <li class="burger-menu-nav-item"><a class="burger-menu-nav-link">Home</a></li>
-        <li class="burger-menu-nav-item"><a class="burger-menu-nav-link">How it’s made?</a></li>
-        <li class="burger-menu-nav-item"><a class="burger-menu-nav-link">Our products</a></li>
-        <li class="burger-menu-nav-item"><a class="burger-menu-nav-link">Feedbacks</a></li>
-        <li class="burger-menu-nav-item"><a class="burger-menu-nav-link">Contact</a></li>
+        <li class="burger-menu-nav-item">
+          <a class="burger-menu-nav-link" href="../../index.html">Home</a>
+        </li>
+        <li class="burger-menu-nav-item">
+          <a class="burger-menu-nav-link" href="#advantages">How it’s made?</a>
+        </li>
+        <li class="burger-menu-nav-item">
+          <a class="burger-menu-nav-link" href="#products">Our products</a>
+        </li>
+        <li class="burger-menu-nav-item">
+          <a class="burger-menu-nav-link" href="#feedbacks">Feedbacks</a>
+        </li>
+        <li class="burger-menu-nav-item">
+          <a class="burger-menu-nav-link" href="#contacts">Contact</a>
+        </li>
       </ul>
     </nav>
-    <button class="button-primary burger-menu-buy-btn" type="button">
+    <button class="button-primary burger-menu-buy-btn open-buy-modal" type="button">
       Buy now
       <svg class="buy-btn-icon" width="12" height="12">
         <use href="/ice-cream-project/assets/sprite-Dm7B36GW.svg#icon-buy-btn"></use>
@@ -85,7 +95,7 @@
         <span class="second-part-hero-title">passion</span>
       </h1>
       <div class="hero-anchor-btn-link-wrapper">
-        <a href="#advantages" class="button-secondary hero-anchor-btn-link">Products</a>
+        <a href="#products" class="button-secondary hero-anchor-btn-link">Products</a>
         <a href="#advantages" class="hero-anchor-link">How it’s made?</a>
       </div>
       <div class="hero-action-call-wrapper">
@@ -147,7 +157,7 @@
   </div>
 </section>
 
-      <section class="products">
+      <section class="products" id="products">
   <div class="container">
     <p class="title-text">100% natural</p>
     <h2 class="section-title">products</h2>
@@ -264,7 +274,7 @@
   </div>
 </section>
 
-      <section class="advantages">
+      <section class="advantages" id="advantages">
   <div class="container">
     <div class="advantages-heading-wrapper">
       <h2 class="section-title advantages-title">
@@ -311,7 +321,7 @@
             This is enough to choose ice cream and coffee for any mood!
           </p>
         </div>
-        <button id="open-modal-btn" class="button-primary advantages-btn">
+        <button class="button-primary advantages-btn" type="button">
           Read more
           <svg class="advantages-btn-icon" width="12" height="12">
             <use href="/ice-cream-project/assets/sprite-Dm7B36GW.svg#icon-buy-btn"></use>
@@ -357,7 +367,7 @@
   </div>
 </section>
 
-      <section class="feedbacks">
+      <section class="feedbacks" id="feedbacks">
   <div class="container">
     <h2>Feedbacks</h2>
   </div>
@@ -415,7 +425,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
   <div class="container"><p>Footer</p></div>
 </footer>
 
