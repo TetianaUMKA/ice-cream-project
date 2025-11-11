@@ -1,5 +1,81 @@
-.promo-modal-content {
-  width: 300px;
-  height: 400px;
-  background-color: #e1a9f6;
+.promo-modal-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.promo-modal-container {
+  position: relative;
+  width: 280px;
+  padding: 28px;
+  background-color: var(--bg-color-secondary);
+  border: 2px solid var(--color-accent);
+  border-radius: 10px;
+}
+
+.promo-modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 6px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+}
+
+.promo-modal-title {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.promo-modal-iframe {
+  width: 224px;
+  height: 199px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.promo-modal-text {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 768px) {
+  .promo-modal-container {
+    width: 568px;
+    padding: 32px 60px;
+  }
+
+  .promo-modal-close-btn {
+    top: 20px;
+    right: 20px;
+  }
+
+  .promo-modal-close-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .promo-modal-title {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+
+  .promo-modal-iframe {
+    width: 448px;
+    height: 205px;
+    margin-bottom: 32px;
+  }
+
+  .promo-modal-text {
+    font-size: 16px;
+  }
 }
