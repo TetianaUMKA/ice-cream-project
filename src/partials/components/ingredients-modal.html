@@ -1,5 +1,92 @@
-<div class="modal-overlay">
-  <div class="ingredients-modal-content">
-    <h2>Chocolate ice cream</h2>
+<div class="ingredients modal-overlay">
+  <div class="ingredients-modal">
+    <h2 class="product-title">Chocolate icecream</h2>
+    <button class="ingr-btn-close" type="button">
+      <svg class="ingr-icon-close">
+        <use href="/img/sprite.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+
+    <picture class="ingr-product-img">
+      <source
+        srcset="
+          /img/ingredients-modal-webp/ingr-modal-mob-1x.webp 1x,
+          /img/ingredients-modal-webp/ingr-modal-mob-2x.webp 2x
+        "
+      />
+      <img
+        src="/img/ingredients-modal-webp/ingr-modal-mob-1x.webp"
+        alt="ice cream"
+        loading="lazy"
+      />
+    </picture>
+    <div class="ingr-product-circle"></div>
+
+    <ul class="consist-list">
+      <li class="consist-item">
+        <div class="consist-circle">
+          <p class="consist-text">320</p>
+        </div>
+        <p class="consist-unit">kcal</p>
+      </li>
+      <li class="consist-item">
+        <div class="consist-circle">
+          <p class="consist-text">4g</p>
+        </div>
+        <p class="consist-unit">Prote...</p>
+      </li>
+      <li class="consist-item">
+        <div class="consist-circle">
+          <p class="consist-text">8,2g</p>
+        </div>
+        <p class="consist-unit">Fats</p>
+      </li>
+      <li class="consist-item">
+        <div class="consist-circle">
+          <p class="consist-text">40,4g</p>
+        </div>
+        <p class="consist-unit">Carbs</p>
+      </li>
+    </ul>
+    <h3 class="ingredients-title">Ingredients</h3>
+    <ul class="ingr-list">
+      <li class="ingr-item">
+        <p class="ingr-name">Milk</p>
+        <p class="ingr-quantity">100ml</p>
+      </li>
+      <li class="ingr-item">
+        <p class="ingr-name">Belgian chocolate</p>
+        <p class="ingr-quantity">20g</p>
+      </li>
+      <li class="ingr-item">
+        <p class="ingr-name">Cream</p>
+        <p class="ingr-quantity">150ml</p>
+      </li>
+      <li class="ingr-item">
+        <p class="ingr-name">Cocoa powder</p>
+        <p class="ingr-quantity">30g</p>
+      </li>
+      <li class="ingr-item">
+        <p class="ingr-name">Sugar</p>
+        <p class="ingr-quantity">40g</p>
+      </li>
+      <li class="ingr-item">
+        <p class="ingr-name">Vanilla sugar</p>
+        <p class="ingr-quantity">10g</p>
+      </li>
+    </ul>
+    <form class="comments-form">
+      <div class="inputs-form">
+        <input class="user-name" name="user-name" type="text" placeholder="Name" />
+        <input class="user-phone" name="user-phone" type="tel" placeholder="Comment" />
+        <textarea
+          name="user-comment"
+          rows="3"
+          placeholder="Comment"
+          class="user-comment"
+        ></textarea>
+      </div>
+      <button type="submit" class="comment-btn button-primary">Submit</button>
+    </form>
   </div>
 </div>
