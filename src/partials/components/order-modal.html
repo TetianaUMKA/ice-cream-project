@@ -1,5 +1,82 @@
-<div class="modal-overlay">
-  <div class="order-modal-content">
-    <h2>Buy now</h2>
+<div class="modal-overlay order-modal-overlay">
+  <div class="order-modal-container">
+    <button class="order-modal-close-btn" type="button">
+      <svg class="order-modal-close-icon" width="16" height="16" aria-label="Close modal window">
+        <use href="/img/sprite.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="order-modal-title">Buy now</h2>
+    <ul class="order-modal-list">
+      <li class="order-modal-item">
+        <div class="order-decor-img-wrapper">
+          <div class="order-background-decor"></div>
+          <img
+            srcset="
+              /img/order-modal-webp/order-modal-img1-1x.webp 1x,
+              /img/order-modal-webp/order-modal-img1-2x.webp 2x
+            "
+            alt="Colorful ice cream"
+          />
+        </div>
+        <div class=""><h3 class="order-item-title">ice cream</h3></div>
+      </li>
+      <li class="order-modal-item">
+        <div class="order-decor-img-wrapper">
+          <div class="order-background-decor"></div>
+          <img
+            srcset="
+              /img/order-modal-webp/order-modal-img2-1x.webp 1x,
+              /img/order-modal-webp/order-modal-img2-2x.webp 2x
+            "
+            alt="A glass of ice coffee with toppings"
+          />
+        </div>
+        <div class="order-item-title-wrapper"><h3 class="order-item-title">ice coffee</h3></div>
+      </li>
+      <li class="order-modal-item">
+        <div class="order-decor-img-wrapper">
+          <div class="order-background-decor"></div>
+          <img
+            srcset="
+              /img/order-modal-webp/order-modal-img3-1x.webp 1x,
+              /img/order-modal-webp/order-modal-img3-2x.webp 2x
+            "
+            alt="Milkshake with toppings"
+          />
+        </div>
+        <div class="order-item-title-wrapper"><h3 class="order-item-title">milkshake</h3></div>
+      </li>
+    </ul>
+    <form class="modal-form">
+      <div class="modal-input-wrapper">
+        <label class="visually-hidden" for="name"></label>
+        <input
+          class="modal-input order-modal-input"
+          name="name"
+          id="name"
+          type="text"
+          placeholder="Name"
+          required
+        />
+        <label class="visually-hidden" for="phone"></label>
+        <input
+          class="modal-input order-modal-input"
+          name="phone"
+          id="phone"
+          type="tel"
+          placeholder="Phone"
+          required
+        />
+        <label class="visually-hidden" for="comment"></label>
+        <textarea
+          class="modal-input modal-textarea order-modal-textarea"
+          name="comment"
+          id="comment"
+          rows="3"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button class="button-primary modal-form-btn" type="submit">Submit</button>
+    </form>
   </div>
 </div>
