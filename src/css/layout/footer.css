@@ -1,8 +1,11 @@
-.footer-contacts {
+.footer {
   position: relative;
-  /* z-index: 5; */
+  z-index: 0;
   background-color: var(--bg-color-primary);
-  /* margin-top: -120px; */
+}
+
+.footer-card-wrapper {
+  transform: translateY(-360px);
 }
 
 .footer-locations-list {
@@ -12,6 +15,8 @@
 }
 
 .footer-locations-item {
+  position: relative;
+  z-index: 3;
   width: 280px;
   background-color: var(--color-text-light);
   border-radius: 24px;
@@ -49,7 +54,7 @@
   margin-bottom: 20px;
 }
 
-.footer-addres-link {
+.footer-address-link {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.8;
@@ -75,7 +80,7 @@
   margin-bottom: 24px;
 }
 
-.footer-working-hours-wrapper p {
+.footer-working-hours-text {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.8;
@@ -93,6 +98,7 @@
 
 .footer-info {
   background-color: var(--bg-color-primary);
+  margin-top: -360px;
 }
 
 .footer-button-wrapper {
@@ -134,9 +140,13 @@
   font-size: 18px;
   text-transform: uppercase;
   color: var(--color-text-light);
+  position: relative;
+  z-index: 2;
 }
 
 .footer-slogan-text-large {
+  position: relative;
+  z-index: 2;
   font-weight: 700;
   font-size: 34px;
   letter-spacing: 0.04em;
@@ -144,6 +154,8 @@
 
 .footer-social-wrapper {
   margin-bottom: 38px;
+  position: relative;
+  z-index: 2;
 }
 
 .footer-social-list {
@@ -180,14 +192,19 @@
 }
 
 .footer-social-line-wrapper {
-  margin-top: 40px;
-  margin-bottom: 16px;
-  width: 100vw;
+  width: 100vw;          
   height: 1px;
   background-color: #e1e1e1;
   position: relative;
-  left: 50%;
-  margin-left: -50vw;
+  left: 50%;                     
+  margin-left: -50vw;           
+  margin-top: 40px;
+  margin-bottom: 16px;
+  z-index: 1;
+}
+
+.footer-copyright-wrapper {
+  padding-bottom: 62px;
 }
 
 .footer-copyright {
@@ -196,7 +213,8 @@
   line-height: 1.5;
   text-align: center;
   color: #7a7a7a;
-  padding-bottom: 62px;
+  position: relative;
+  z-index: 2;
 }
 
 @media screen and (min-width: 768px) {
@@ -210,14 +228,49 @@
     width: 224px;
   }
 
+  .footer-locations-name-wrapper {
+    row-gap: 32px;
+  }
+
+  .footer-locations-title {
+    font-size: 16px;
+  }
+
+  .footer-locations-subtitle {
+    font-size: 14px;
+  }
+
+  .footer-address-link {
+    font-size: 14px;
+  }
+
+  .footer-locations-addres {
+    margin-bottom: 26px;
+  }
+
   .footer-line-wrapper {
-    width: 170px;
+    margin-bottom: 32px;
+    width: 170px;  
+  }
+
+  .footer-working-hours-wrapper {
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .footer-working-hours-text {
+    font-size: 14px;
+  }
+
+  .footer-contacts-wrapper {
+    font-size: 14px;
   }
 
   .footer-button-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 60px;
     margin-bottom: 40px;
   }
 
@@ -247,10 +300,6 @@
     padding: 0;
   }
 
-  .footer-social-line-wrapper {
-    text-align: right;
-  }
-
   .footer-slogan {
     max-width: 352px;
     gap: 9px;
@@ -261,6 +310,7 @@
     font-size: 26px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    font-weight: 700;
   }
 
   .footer-slogan-text-large {
@@ -269,19 +319,90 @@
     text-transform: uppercase;
   }
 
-  .footer-copyright {
+  .footer-contact-text {
+    font-size: 14px;
+  }
+
+  .footer-copyright-wrapper {
     white-space: nowrap;
     padding-bottom: 13px;
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer-locations-list {
     gap: 32px;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .footer-locations-item {
-    width: 358px;
+    width: 368px;
+    height: 538px;
   }
+
+  .footer-locations-name-wrapper {
+    margin-bottom: 8px;
+  }
+
+  .footer-locations-subtitle {
+    font-size: 16px;
+  }
+  
+  .footer-address-link {
+    font-size: 16px;
+  }
+  
+  .footer-line-wrapper {
+    width: 288px;
+  }
+
+  .footer-working-hours-text {
+    font-size: 16px;
+  }
+
+  .footer-contacts-wrapper {
+    font-size: 16px;
+  }
+
+  .footer-button-wrapper {
+    margin-top: 64px;
+    margin-bottom: 120px;
+  }
+
+  .footer-slogan-text {
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  .footer-slogan-text-large {
+    font-size: 58px;
+    font-weight: 700;
+  }
+
+  .footer-slogan {
+    max-width: 504px;
+    gap: 12px
+  }
+
+  .footer-social-wrapper {
+    margin-top: 0;
+    gap: 40px;
+  }
+
+  .footer-contact-text {
+    line-height: 3.5;
+  }
+
+  .footer-slogan-social-wrapper {
+    margin-bottom: 54px;
+  }
+
+  .footer-social-line-wrapper {
+    width: 1167px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+  }
+
+  
 }
