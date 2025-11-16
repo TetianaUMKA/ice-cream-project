@@ -1,5 +1,100 @@
-.location-modal-content {
-  width: 300px;
-  height: 400px;
-  background-color: #e1a9f6;
+.location-modal {
+  position: relative;
+  width: 280px;
+  height: 365px;
+  background-color: var(--bg-color-secondary);
+  border: 2px solid var(--color-accent);
+  border-radius: 10px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.location-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.location-btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+}
+
+.location-icon-close {
+  fill: var(--color-text-dark);
+}
+
+.location-icon-close:hover .location-icon-close,
+.location-icon-close:focus .location-icon-close {
+  fill: var(--color-hover);
+}
+
+.thumb-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.location-map {
+  width: 150%;
+  height: 150%;
+  scale: 1.1;
+}
+
+.open-map-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .location-modal {
+    width: 568px;
+    height: 458px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .location-title {
+    margin-bottom: 32px;
+  }
+
+  .location-btn-close {
+    top: 20px;
+    right: 20px;
+  }
+
+  .thumb-map {
+    height: 260px;
+    margin-bottom: 32px;
+  }
+
+  .location-map {
+    width: 155%;
+    height: 155%;
+    scale: 1.3;
+  }
 }
