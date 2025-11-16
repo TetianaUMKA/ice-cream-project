@@ -1,5 +1,26 @@
-<div class="modal-overlay">
-  <div class="location-modal-content">
-    <h2>Our Locations</h2>
+<div class="location modal-overlay">
+  <div class="location-modal">
+    <h2 class="location-title">Our Locations</h2>
+    <div class="thumb-map">
+      <iframe
+        src="https://www.google.com/maps/d/embed?mid=1De1VBDlsdpdgeRNJIj982FJTWC_ixuo&ehbc=2E312F&noprof=1"
+        class="location-map"
+      ></iframe>
+    </div>
+
+    <button class="open-map-btn button-primary" type="button">
+      <a
+        href="https://www.google.com/maps/d/embed?mid=1De1VBDlsdpdgeRNJIj982FJTWC_ixuo&ehbc=2E312F&noprof=1"
+        target="_blank"
+      >
+        Open map</a
+      >
+    </button>
+
+    <button class="location-btn-close" type="button">
+      <svg class="location-icon-close">
+        <use href="/img/sprite.svg#icon-modal-close"></use>
+      </svg>
+    </button>
   </div>
 </div>
