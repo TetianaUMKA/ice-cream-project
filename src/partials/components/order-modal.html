@@ -8,8 +8,8 @@
     <h2 class="order-modal-title">Buy now</h2>
     <ul class="order-modal-list">
       <li class="order-modal-item">
-        <div class="order-decor-img-wrapper">
-          <div class="order-background-decor"></div>
+        <div class="order-img-decor order-img-decor-1"></div>
+        <div class="order-img-wrapper">
           <img
             srcset="
               /img/order-modal-webp/order-modal-img1-1x.webp 1x,
@@ -18,11 +18,13 @@
             alt="Colorful ice cream"
           />
         </div>
-        <div class=""><h3 class="order-item-title">ice cream</h3></div>
+        <div class="order-item-title-wrapper order-item-title-wrapper-1">
+          <h3 class="order-item-title">ice cream</h3>
+        </div>
       </li>
       <li class="order-modal-item">
-        <div class="order-decor-img-wrapper">
-          <div class="order-background-decor"></div>
+        <div class="order-img-decor order-img-decor-2"></div>
+        <div class="order-img-wrapper">
           <img
             srcset="
               /img/order-modal-webp/order-modal-img2-1x.webp 1x,
@@ -31,11 +33,13 @@
             alt="A glass of ice coffee with toppings"
           />
         </div>
-        <div class="order-item-title-wrapper"><h3 class="order-item-title">ice coffee</h3></div>
+        <div class="order-item-title-wrapper order-item-title-wrapper-2">
+          <h3 class="order-item-title">ice coffee</h3>
+        </div>
       </li>
       <li class="order-modal-item">
-        <div class="order-decor-img-wrapper">
-          <div class="order-background-decor"></div>
+        <div class="order-img-decor order-img-decor-3"></div>
+        <div class="order-img-wrapper">
           <img
             srcset="
               /img/order-modal-webp/order-modal-img3-1x.webp 1x,
@@ -44,12 +48,14 @@
             alt="Milkshake with toppings"
           />
         </div>
-        <div class="order-item-title-wrapper"><h3 class="order-item-title">milkshake</h3></div>
+        <div class="order-item-title-wrapper order-item-title-wrapper-3">
+          <h3 class="order-item-title">milkshake</h3>
+        </div>
       </li>
     </ul>
     <form class="modal-form">
       <div class="modal-input-wrapper">
-        <label class="visually-hidden" for="name"></label>
+        <label class="visually-hidden" for="name">Name</label>
         <input
           class="modal-input order-modal-input"
           name="name"
@@ -58,7 +64,7 @@
           placeholder="Name"
           required
         />
-        <label class="visually-hidden" for="phone"></label>
+        <label class="visually-hidden" for="phone">Phone</label>
         <input
           class="modal-input order-modal-input"
           name="phone"
@@ -67,7 +73,7 @@
           placeholder="Phone"
           required
         />
-        <label class="visually-hidden" for="comment"></label>
+        <label class="visually-hidden" for="comment">Comment</label>
         <textarea
           class="modal-input modal-textarea order-modal-textarea"
           name="comment"
