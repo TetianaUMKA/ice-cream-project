@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/ice-cream-project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/ice-cream-project/assets/index-Dy-lZhoV.css">
+    <link rel="stylesheet" crossorigin href="/ice-cream-project/assets/index-B-LQcSVj.css">
   </head>
   <body>
     <header class="header">
@@ -601,9 +601,54 @@
   </div>
 </div>
 
-      <div class="modal-overlay">
-  <div class="franchise-modal-content">
-    <h2 hidden>Franchise Opportunities</h2>
+      <div class="modal-overlay franchise-modal-overlay">
+  <div class="franchise-modal-container">
+    <button class="modal-close-btn franchise-modal-close-icon" type="button">
+      <svg class="order-modal-close-icon" width="16" height="16" aria-label="Close modal window">
+        <use href="/ice-cream-project/assets/sprite-Dm7B36GW.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <h2 class="visually-hidden">Franchise Opportunities</h2>
+    <p class="franchise-modal-congrats">Thank you for your interest in owning an Ice Cream shop</p>
+    <p class="franchise-modal-description">
+      Due to the overwhelming volume of franchise requests we are not accepting new franchisee
+      applications at this time. Once the application process resumes, we will contact you for
+      further information. Please fill out the contact information below and we will reach out for
+      additional information. We appreciate your patience.
+    </p>
+    <form class="modal-form">
+      <div class="modal-input-wrapper">
+        <label class="visually-hidden" for="name">Name</label>
+        <input class="modal-input" name="name" id="name" type="text" placeholder="Name" required />
+        <label class="visually-hidden" for="phone">Phone</label>
+        <input
+          class="modal-input"
+          name="phone"
+          id="phone"
+          type="tel"
+          placeholder="Phone"
+          required
+        />
+        <label class="visually-hidden" for="email">Email</label>
+        <input
+          class="modal-input"
+          name="email"
+          id="email"
+          type="mailo"
+          placeholder="Email"
+          required
+        />
+        <label class="visually-hidden" for="comment">Comment</label>
+        <textarea
+          class="modal-input modal-textarea"
+          name="comment"
+          id="comment"
+          rows="3"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button class="button-primary modal-form-btn" type="submit">Submit</button>
+    </form>
   </div>
 </div>
 
