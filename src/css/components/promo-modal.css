@@ -13,19 +13,6 @@
   border-radius: 10px;
 }
 
-.promo-modal-close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  padding: 6px 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  border: none;
-  background-color: transparent;
-}
-
 .promo-modal-title {
   font-family: var(--font-heading);
   font-weight: 400;
@@ -51,16 +38,6 @@
   .promo-modal-container {
     width: 568px;
     padding: 32px 60px;
-  }
-
-  .promo-modal-close-btn {
-    top: 20px;
-    right: 20px;
-  }
-
-  .promo-modal-close-icon {
-    width: 20px;
-    height: 20px;
   }
 
   .promo-modal-title {
