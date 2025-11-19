@@ -1,3 +1,6 @@
+/* External libraries */
+@import 'animate.css';
+
 /* Common styles */
 @import url('./utils/reset.css');
 @import url('./utils/base.css');
