@@ -20,29 +20,6 @@
   margin-bottom: 20px;
 }
 
-.location-btn-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  border: none;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: inherit;
-}
-
-.location-icon-close {
-  fill: var(--color-text-dark);
-}
-
-.location-icon-close:hover .location-icon-close,
-.location-icon-close:focus .location-icon-close {
-  fill: var(--color-hover);
-}
-
 .thumb-map {
   display: flex;
   justify-content: center;

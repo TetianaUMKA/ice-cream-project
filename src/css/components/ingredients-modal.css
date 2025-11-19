@@ -25,29 +25,6 @@
   margin-bottom: 184px;
 }
 
-.ingr-btn-close {
-  position: absolute;
-  top: 28px;
-  right: 20px;
-  border: none;
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: inherit;
-}
-
-.ingr-icon-close {
-  fill: var(--color-text-dark);
-}
-
-.ingr-btn-close:hover .ingr-icon-close,
-.ingr-btn-close:focus .ingr-icon-close {
-  fill: var(--color-hover);
-}
-
 .ingr-product-img {
   z-index: 2;
   position: absolute;

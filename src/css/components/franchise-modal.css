@@ -14,19 +14,6 @@
   border-radius: 10px;
 }
 
-.modal-close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  padding: 6px 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  border: none;
-  background-color: transparent;
-}
-
 .franchise-modal-congrats {
   font-family: var(--font-heading);
   line-height: 1.5;

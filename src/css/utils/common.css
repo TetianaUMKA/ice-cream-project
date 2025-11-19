@@ -1,3 +1,4 @@
+/* #region title  */
 .section-title {
   font-family: var(--font-heading);
   font-weight: 400;
@@ -19,6 +20,10 @@
     letter-spacing: 0.06em;
   }
 }
+
+/* #endregion title */
+
+/* #region buttons */
 
 .button-primary {
   font-weight: 600;
@@ -79,6 +84,10 @@
   stroke-width: 2px;
 }
 
+/* #endregion buttons */
+
+/* #region modal */
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -103,18 +112,44 @@
   pointer-events: auto;
 }
 
-.visually-hidden {
+.modal-close-btn {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  top: 8px;
+  right: 8px;
+  padding: 6px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
 }
+
+.modal-close-icon {
+  fill: var(--text-color-dark);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-close-btn {
+    top: 20px;
+    right: 20px;
+  }
+  .modal-close-icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-close-btn:hover,
+  .modal-close-btn:focus {
+    animation-name: rotate;
+    animation-duration: 1s;
+    outline-color: var(--color-hover);
+  }
+}
+
+/* #endregion modal */
 
 /* #region modal-form */
 
@@ -181,3 +216,20 @@
 }
 
 /* #endregion modal-form */
+
+/* #region utils */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* #endregion utils */

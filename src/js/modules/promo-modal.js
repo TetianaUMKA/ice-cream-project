@@ -1,5 +1,5 @@
 const openPromoModalBtn = document.querySelector('.advantages-btn');
-const closePromoModalBtn = document.querySelector('.promo-modal-close-icon');
+const closePromoModalBtn = document.querySelector('.promo-modal-close-btn');
 const promoModal = document.querySelector('.promo-modal-overlay');
 
 openPromoModalBtn.addEventListener('click', toggleModal);
