@@ -4,12 +4,12 @@ const burgerOverlay = document.querySelector('.burger-menu');
 const burgerLinks = document.querySelectorAll('.burger-menu-nav-link');
 
 openMenuBtn.addEventListener('click', () => {
-  burgerOverlay.classList.add('is-open');
+  burgerOverlay.classList.add('is-open', 'animate__animated', 'animate__slideInDown');
   document.body.style.overflow = 'hidden';
 });
 
 closeMenuBtn.addEventListener('click', () => {
-  burgerOverlay.classList.remove('is-open');
+  burgerOverlay.classList.remove('is-open', 'animate__animated', 'animate__slideInDown');
   document.body.style.overflow = '';
 });
 
