@@ -59,24 +59,37 @@
     </ul>
     <form class="modal-form">
       <div class="modal-input-wrapper">
-        <label class="visually-hidden" for="name">Name</label>
-        <input class="modal-input" name="name" id="name" type="text" placeholder="Name" required />
-        <label class="visually-hidden" for="phone">Phone</label>
+        <label class="visually-hidden" for="order-name">Name</label>
         <input
           class="modal-input"
+          id="order-name"
+          name="name"
+          type="text"
+          placeholder="Name"
+          required
+          autocomplete="name"
+          aria-label="Name"
+        />
+        <label class="visually-hidden" for="order-phone">Phone</label>
+        <input
+          class="modal-input"
+          id="order-phone"
           name="phone"
-          id="phone"
           type="tel"
           placeholder="Phone"
           required
+          autocomplete="tel"
+          aria-label="Phone number"
         />
-        <label class="visually-hidden" for="comment">Comment</label>
+        <label class="visually-hidden" for="order-comment">Comment</label>
         <textarea
           class="modal-input modal-textarea"
+          id="order-comment"
           name="comment"
-          id="comment"
           rows="3"
           placeholder="Comment"
+          autocomplete="off"
+          aria-label="Comment"
         ></textarea>
       </div>
       <button class="button-primary modal-form-btn" type="submit">Submit</button>
