@@ -111,32 +111,13 @@
 }
 
 .footer-button {
-  border-radius: 10px;
   width: 196px;
   height: 42px;
-  background-color: var(--color-accent);
-  font-weight: 600;
-  font-size: 14px;
   text-align: center;
-  border: none;
   display: inline-flex;
   align-items: center;
-  color: var(--color-text-dark);
   justify-content: center; 
   column-gap: 6px;   
-  line-height: 1;
-}
-
-.btn-text {
-  display: block;
-  line-height: 1;
-}
-
-
-.footer-button-transperent {
-  background-color: transparent;
-  border-radius: 10px;
-  border: 2px solid var(--color-accent);
 }
 
 .footer-slogan {
