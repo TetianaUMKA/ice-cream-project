@@ -89,10 +89,6 @@
   margin: 0 auto;
 }
 
-.buy-btn-icon {
-  stroke: var(--color-text-dark);
-}
-
 @media screen and (min-width: 768px) {
   .header-container {
     padding-top: 20px;
@@ -162,10 +158,6 @@
 
   .buy-btn {
     margin-left: 115px;
-  }
-
-  .buy-btn-icon {
-    stroke: currentColor;
   }
 
   .burger-open-menu-btn {
