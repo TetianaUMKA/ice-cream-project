@@ -3,7 +3,7 @@
 <symbol id="icon-burger" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M6 10h20M6 16h20M6 22h20"></path>
 </symbol>
-<symbol id="icon-buy-btn" viewBox="0 0 32 32">
+<symbol id="icon-btn-chevron-right" viewBox="0 0 32 32">
 <path fill="transparent" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="5.3333" d="M10.667 5.333l13.2 10.667-13.2 10.667"></path>
 </symbol>
 <symbol id="icon-cow" viewBox="0 0 32 32">
