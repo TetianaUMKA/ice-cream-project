@@ -77,6 +77,10 @@
     cursor: not-allowed;
   } */
 
+.btn-icon {
+  stroke: currentColor;
+}
+
 .icon-arrow {
   width: 40px;
   height: 15px;
