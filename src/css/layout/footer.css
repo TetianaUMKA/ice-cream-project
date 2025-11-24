@@ -1,6 +1,5 @@
 .footer {
   background-color: var(--bg-color-primary);
-  width: 100%;
 }
 
 .footer-locations-section {
@@ -21,9 +20,7 @@
 }
 
 .footer-locations-item {
-  max-width: 280px;
-  width: 100%;
-  box-sizing: border-box;
+  width: 280px;
   background-color: var(--color-text-light);
   border-radius: 24px;
   box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
@@ -73,7 +70,7 @@
 }
 
 .footer-line-wrapper {
-  width: 216px;
+  width: 100%;
   height: 1px;
   background-color: #e1e1e1;
   margin-bottom: 24px;
@@ -140,8 +137,6 @@
 }
 
 .footer-slogan-text-large {
-  position: relative;
-  z-index: 2;
   font-weight: 700;
   font-size: 34px;
   letter-spacing: 0.04em;
@@ -350,7 +345,6 @@
   }
 
   .footer-locations-item {
-    max-width: none;
     width: 368px;
     height: 538px;
   }
