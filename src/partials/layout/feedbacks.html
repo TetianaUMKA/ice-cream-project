@@ -1,5 +1,136 @@
 <section class="feedbacks" id="feedbacks">
-  <div class="container">
-    <h2>Feedbacks</h2>
+  <div class="container feedbacks-container">
+    <h2 class="visually-hidden">Feedbacks</h2>
+    <div class="feedbacks-img-wrapper">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            /img/feedbacks-webp/fb1-img-desk-1x.webp 1x,
+            /img/feedbacks-webp/fb1-img-desk-2x.webp 2x
+          " />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /img/feedbacks-webp/fb1-img-tab-1x.webp 1x,
+            /img/feedbacks-webp/fb1-img-tab-2x.webp 2x
+          " />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            /img/feedbacks-webp/fb1-img-mob-1x.webp 1x,
+            /img/feedbacks-webp/fb1-img-mob-2x.webp 2x
+          " />
+        <img
+          src="/img/feedbacks-webp/fb1-img-mob-1x.webp"
+          alt="A variety of delicious ice cream"
+          loading="lazy"
+      /></picture>
+    </div>
+    <ul class="feedbacks-list">
+      <li class="feedbacks-item active">
+        <div class="fb-user-img-wrapper">
+          <img
+            srcset="
+              /img/feedbacks-webp/fb-user1-1x.webp 1x,
+              /img/feedbacks-webp/fb-user1-2x.webp 2x
+            "
+            alt="customer Emily"
+            width="85"
+            height="85"
+            loading="lazy"
+          />
+        </div>
+        <p class="fb-item-text">
+          I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In
+          addition, you have beautiful serving, cozy atmosphere and polite staff.
+        </p>
+        <p class="fb-item-description">Emily, Los Angeles</p>
+      </li>
+      <li class="feedbacks-item">
+        <div class="fb-user-img-wrapper">
+          <img
+            srcset="
+              /img/feedbacks-webp/fb-user2-1x.webp 1x,
+              /img/feedbacks-webp/fb-user2-2x.webp 2x
+            "
+            alt="customer Emily"
+            width="85"
+            height="85"
+            loading="lazy"
+          />
+        </div>
+        <p class="fb-item-text">
+          I love eating popsicles on a hot day. Yours is always delicious. I recommend your cafe to
+          everyone I know.
+        </p>
+        <p class="fb-item-description">Sam, Los Angeles</p>
+      </li>
+      <li class="feedbacks-item">
+        <div class="fb-user-img-wrapper">
+          <img
+            srcset="
+              /img/feedbacks-webp/fb-user3-1x.webp 1x,
+              /img/feedbacks-webp/fb-user3-2x.webp 2x
+            "
+            alt="customer Emily"
+            width="85"
+            height="85"
+            loading="lazy"
+          />
+        </div>
+        <p class="fb-item-text">
+          I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In
+          addition, you have beautiful serving, cozy atmosphere and polite staff.
+        </p>
+        <p class="fb-item-description">Diana, Chicago</p>
+      </li>
+      <li class="feedbacks-item">
+        <div class="fb-user-img-wrapper">
+          <img
+            srcset="
+              /img/feedbacks-webp/fb-user4-1x.webp 1x,
+              /img/feedbacks-webp/fb-user4-2x.webp 2x
+            "
+            alt="customer Emily"
+            width="85"
+            height="85"
+            loading="lazy"
+          />
+        </div>
+        <p class="fb-item-text">
+          Every day we come to you with friends after classes in college. We love your ice cream and
+          casual atmosphere!
+        </p>
+        <p class="fb-item-description">Bryan, New-York</p>
+      </li>
+    </ul>
+    <div class="dots" role="tablist">
+      <button
+        class="dot-btn active"
+        role="tab"
+        aria-selected="true"
+        aria-label="Go to another comment"
+      >
+        <svg width="12" height="12">
+          <circle cx="6" cy="6" r="6" />
+        </svg>
+      </button>
+      <button class="dot-btn" role="tab" aria-label="Go to another comment">
+        <svg width="12" height="12">
+          <circle cx="6" cy="6" r="6" />
+        </svg>
+      </button>
+      <button class="dot-btn" role="tab" aria-label="Go to another comment">
+        <svg width="12" height="12">
+          <circle cx="6" cy="6" r="6" />
+        </svg>
+      </button>
+      <button class="dot-btn" role="tab" aria-label="Go to another comment">
+        <svg width="12" height="12">
+          <circle cx="6" cy="6" r="6" />
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
