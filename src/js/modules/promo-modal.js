@@ -1,10 +1,16 @@
 const openPromoModalBtn = document.querySelector('.advantages-btn');
 const closePromoModalBtn = document.querySelector('.promo-modal-close-btn');
 const promoModal = document.querySelector('.promo-modal-overlay');
+const promoVideo = document.querySelector('.promo-modal-iframe');
 
-openPromoModalBtn.addEventListener('click', toggleModal);
-closePromoModalBtn.addEventListener('click', toggleModal);
+const videoSrc = promoVideo.src;
 
-function toggleModal() {
-  promoModal.classList.toggle('is-open');
-}
+openPromoModalBtn.addEventListener('click', () => {
+  promoVideo.src = videoSrc;
+  promoModal.classList.add('is-open');
+});
+
+closePromoModalBtn.addEventListener('click', () => {
+  promoVideo.src = '';
+  promoModal.classList.remove('is-open');
+});
