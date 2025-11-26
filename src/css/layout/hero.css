@@ -1,9 +1,9 @@
 .hero {
-  padding-top: 60px;
   background-color: #84a178;
 }
 
 .hero-container {
+  padding-top: 60px;
   background-image: image-set(
     url('/img/hero-webp/hero-dots-mob-1x.webp') 1x,
     url('/img/hero-webp/hero-dots-mob-2x.webp') 2x
@@ -91,7 +91,7 @@
   height: 100%;
   object-fit: contain;
   object-position: bottom;
-  filter: drop-shadow(5px 10px 10px rgba(252, 252, 0252, 0.44));
+  filter: drop-shadow(5px -20px 20px rgba(252, 252, 0252, 0.44));
 }
 
 .statics-descr-wrapper {
@@ -99,13 +99,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
-    padding-top: 0;
-  }
-
   .hero-container {
     display: flex;
     align-items: flex-start;
+    padding-top: 20px;
   }
 
   .hero-content-first-wrapper {
@@ -192,6 +189,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .hero-container {
+    padding-top: 30px;
+  }
+
   .hero-title {
     max-width: 367px;
     margin-bottom: 28px;
