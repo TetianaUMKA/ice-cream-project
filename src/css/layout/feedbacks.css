@@ -40,8 +40,11 @@
   align-items: center;
   display: none;
   opacity: 0;
-  transform: translateX(20px);
-  transition: opacity var(--transition), transform var(--transition);
+}
+
+.feedbacks-item.active {
+  display: flex;
+  opacity: 1;
 }
 
 .fb-user-img-wrapper {
@@ -50,12 +53,6 @@
   margin-bottom: 32px;
   border-radius: 50%;
   overflow: hidden;
-}
-
-.feedbacks-item.active {
-  display: flex;
-  opacity: 1;
-  transform: translateX(0);
 }
 
 .fb-item-text {
@@ -82,6 +79,8 @@
 }
 
 .dot-btn {
+  width: 24px;
+  height: 24px;
   fill: #d9d9d9;
   background-color: transparent;
   border: none;
@@ -174,6 +173,19 @@
 
   .dot-btn:hover {
     fill: var(--color-accent);
+  }
+
+  .dot-btn:focus {
+    outline: 2px solid var(--color-accent);
+    border-radius: 50%;
+  }
+
+  .active:hover {
+    fill: var(--bg-color-primary);
+  }
+
+  .active:focus {
+    outline: none;
   }
 }
 
