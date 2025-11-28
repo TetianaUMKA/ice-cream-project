@@ -26,6 +26,8 @@
   height: 130px;
   border-radius: 7px;
   overflow: hidden;
+  touch-action: none;
+  overscroll-behavior: contain;
 }
 
 .feedbacks-list {
