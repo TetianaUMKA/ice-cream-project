@@ -61,7 +61,7 @@
   font-size: 12px;
   line-height: 1.8;
   letter-spacing: 0.04em;
-  color: var(--bg-color-card-2);
+  color: var(--color-text-additional);
 }
 
 .footer-locations-address {
@@ -89,7 +89,7 @@
 }
 
 .footer-working-hours-span {
-  color: var(--color-disabled);
+  color: var(--color-hover);
 }
 
 .footer-contacts-address {
@@ -197,11 +197,11 @@
 }
 
 .footer-copyright {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
-  color: #7a7a7a;
+  color: var(--color-text-light);
 }
 
 @media screen and (min-width: 768px) {
