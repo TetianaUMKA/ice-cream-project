@@ -33,6 +33,24 @@ if (!items.length || !dots.length || !slider) {
   });
 }
 
+let wheelTimeout;
+
+slider.addEventListener('wheel', e => {
+  if (wheelTimeout) return;
+
+  const sensitivity = 10;
+
+  if (e.deltaX > sensitivity) {
+    goToNextSlide();
+  } else if (e.deltaX < -sensitivity) {
+    goToPrevSlide();
+  }
+
+  wheelTimeout = setTimeout(() => {
+    wheelTimeout = null;
+  }, 300);
+});
+
 function showSlide(index) {
   if (index < 0) index = items.length - 1;
   if (index >= items.length) index = 0;
